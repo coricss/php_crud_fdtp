@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #0f0f0f;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc3545;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ffffff;
+  border-radius: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  height: 100%;
+}
+
+.employee-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #fff;
+  border: 1px solid #5a5a5a;
+}
+
+.btn-new-employee, .btn-save, .btn-edit, .btn-delete, .btn-clear, .btn-reset {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-close {
+  box-shadow: none !important;
+  outline: none !important;
+  filter: invert(1);
+}
+
+.modal-content {
+  color: #fff;
+  border: 1px solid #5a5a5a !important;
+  background-color: #161616;
+}
+
+#profileDisplay{ 
+  display: block; 
+  height: 2in; 
+  width: 2in; 
+  margin: 0px auto; 
+  border: 1px solid #000000; 
+}
+.profileDisplayEdit { 
+  display: block; 
+  height: 2in; 
+  width: 2in; 
+  margin: 0px auto; 
+  border: 1px solid #000000; 
+}
+.img-placeholder {
+  width: 2in;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .8;
+  height: 2in;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.img-placeholder h5 {
+  font-size: 12px;
+  margin-top: 50%;
+  color: white;
+}
+.img-div:hover .img-placeholder {
+  display: block;
+  cursor: pointer;
+}
